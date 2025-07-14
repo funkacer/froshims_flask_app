@@ -26,10 +26,10 @@ def index():
 def register():
     name = request.form.get("name")
     if not name:
-        return render_template("failure.html", message="Missing name")
+        return render_template("error.html", message="Missing name")
     sport = request.form.get("sport")
     if not sport:
-        return render_template("failure.html", message="Missing sport")
+        return render_template("error.html", message="Missing sport")
     if sport not in SPORTS:
-        return render_template("failure.html", message="Invalid sport")
+        return render_template("error.html", message="Invalid sport")
     return render_template("success.html")
