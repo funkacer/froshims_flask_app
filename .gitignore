@@ -6,5 +6,5 @@
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 */__pycache__/*
-/_data/*
+/.venv/*
 froshims.db
